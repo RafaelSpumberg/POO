@@ -38,17 +38,15 @@ houver medalha com este código retorna null
 consultaMedalhas(String): retorna uma coleção de medalhas com a
 modalidade indicada. Se não houver nenhuma medalha com esta modalidade
 retorna null
-ist<Medalha> result = new ArrayList<>();
-        for (Medalha medalha : medalhas.values()) {
-            if (medalha.getModalidade().equals(modalidade)) {
-                result.add(medalha);
-            }
-        }
-        return result.isEmpty() ? null : result;
-    }
  */
 	public ArrayList<Medalha> consultaMedalhas(String modalidade) {
-
+		consulta = new ArrayList<>();
+		for (Medalha m : medalhas){
+			if (m.getModalidade().equals(Modalidade)){
+			consulta.add(m);
+				return consulta; 
+			}
+		}
 		return null;
 	}
 
