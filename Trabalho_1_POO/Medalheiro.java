@@ -44,7 +44,8 @@ retorna null
 		for (Medalha m : medalhas){
 			if (m.getModalidade().equals(Modalidade)){
 			consulta.add(m);
-				return consulta; 
+			}
+			return consulta; 
 			}
 		}
 		return null;
